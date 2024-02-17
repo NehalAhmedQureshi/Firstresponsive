@@ -1,0 +1,171 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body {
+    background-color: rgba(184, 178, 178, 0.759);
+}
+header {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/id/1597961668/photo/golden-cup-trophy-or-winner-prize-stand-on-stack-books-achievement-in-education-study-award.jpg?s=612x612&w=0&k=20&c=30_YUyZ4i810ojrxLxIZINvzvl-ZIQOB9riombz48II=) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    height: 10vh;
+    /* border: 2px solid white; */
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0, 0, 0,0.7);
+    z-index: 2;
+}
+.navbar-section{
+    /* border: 2px solid white; */
+    color: #fff;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 9vh;
+}
+.navbar-section #icon {
+    font-size: 3.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-section .menuitem li {
+    display: inline-block;
+    position: relative;
+    margin-left: 5rem;
+}
+.navbar-section .menuitem li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    border-radius: 25px;
+    background-color: white;
+    transition: all 300ms ease-in-out;
+}
+.menuitem li:hover::after{
+    width: 100%;
+}
+.navbar-section .menuitem li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+header .homecontent{
+    position: relative;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: #fff;
+}
+.homecontent h1 {
+    font-size: 5rem;
+    text-shadow: 10px 7px rgb(96, 96, 96);
+}
+.homecontent p {
+    word-spacing: 0.9rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.homecontent .btn {
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.homecontent .btn .btn1,.btn2{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: black;
+    border-radius: 25px;
+    transition: all 600ms ease-in-out;
+}
+.homecontent .btn .btn2:hover {
+    background-color: #fff;
+    color: black;
+}
+.homecontent .btn .btn1:hover{
+    background-color: #fff;
+    color: black;
+}
+
+#about,#product {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 3rem;
+}
+.about-title,.product-title {
+    font-size: 3rem;
+    position: relative;
+    text-shadow: 7px 5px rgb(151, 148, 148);
+}
+.about-title::after,.product-title::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 1rem;
+    border-radius: 25px;
+    background-color: rgb(92, 165, 162);
+    border-bottom: 2px solid blue;
+    border-right: 2px solid blue;
+    position: absolute;
+    bottom: -1.5rem;
+}
+.about-section,.product-section {
+    width:90%;
+    height: 30rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 2rem;
+    display: flex;
+    overflow: hidden;
+}
+.about-section .about-img {
+    width: 50%;
+    height: 20rem;
+}
+.about-section .about-text {
+    width: 50%;
+}
+.about-text p {
+    font-size: 1.8rem;
+    word-spacing: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    line-height: 4rem;
+}
+.product-section .product-img {
+    width: 50%;
+}
+.product-section .product-text {
+    width: 50%;
+}
+.product-text p {
+    line-height: 4rem;
+    word-spacing: 1rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.8rem;
+}
